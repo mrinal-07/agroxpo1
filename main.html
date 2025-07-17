@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | AGROXPHERE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    /* General reset and styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header container */
+header {
+  background-color: #ffffff; /* Optional: add a background */
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Flex container */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+header img {
+  height: 50px;
+}
+
+/* Navigation styling */
+nav .nav {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link styling */
+.nav-link {
+  text-decoration: none;
+  color: #2c5f2d;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #e0f3e0;
+  border-radius: 6px;
+  color: #1d3f1d;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  background-color: #2c5f2d;
+  border-radius: 6px;
+}
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?india,agriculture') no-repeat center center/cover;
+      height: 60vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px #000;
+    }
+    /* Hero Section Styling */
+.hero {
+  height: 40vh; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(44,95,45,0.6), rgba(44,95,45,0.6)), 
+              url('images/hero-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title Styling */
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #fff, #a8f0a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeZoom 2s ease-in-out, colorPulse 4s infinite alternate;
+}
+
+/* Keyframe Animations */
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes colorPulse {
+  0% {
+    background: linear-gradient(90deg, #fff, #a8f0a2);
+    -webkit-background-clip: text;
+  }
+  100% {
+    background: linear-gradient(90deg, #90eb90, #fff);
+    -webkit-background-clip: text;
+  }
+}
+
+.col-md-6 img {
+  border-radius: 15px; /* Smooth rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect for interactivity */
+.col-md-6 img:hover {
+  transform: scale(1.05); /* Subtle zoom-in */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+.about-section {
+  padding: 50px 20px;
+  background: #f9fdf9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c5f2d;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border: 2px solid #dbead6;
+}
+
+.about-card h3 {
+  font-size: 1.2rem;
+  color: #2c5f2d;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .about-card h3 {
+    font-size: 1rem;
+  }
+}
+
+   
+    .hero h1 { font-size: 3rem; }
+    .section-title { margin: 60px 0 30px; }
+  </style>
+</head>
+<body>
+  <header class="py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="images/agroxphere.png" alt="Logo" style="height: 50px;">
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="main.html" class="nav-link active">About</a></li>
+          <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+           <li class="nav-item"><a href="testimonial.html" class="nav-link">Testimonial</a></li>
+           <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+  <h1 class="hero-title" data-aos="zoom-in">About AGROXPHERE</h1>
+</div>
+<br>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right">
+        <h2 class="section-title">Who We Are</h2>
+        <p>
+<strong>At Agroxphere</strong>, we are committed to delivering premium Indian agricultural products to global markets. With trust, reliability, and quality at our core, we specialize in exporting a wide range of commodities—rice, grains, pulses, spices, and more.
+</p>
+<p>
+From small consignments to bulk container loads, we cater to distributors, wholesalers, and retailers worldwide. Our motto—<em>“Harvesting Quality, Exporting Trust”</em>—drives every shipment. Backed by strong supplier networks and export-ready processes, Agroxphere is your trusted partner for authentic Indian agri-products.
+</p>
+
+
+      </div>
+      
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="agri2.jpg" class="img-fluid rounded" alt="Agroxphere operations">
+      </div>
+    </div>
+  </section>
+  <section class="about-section">
+  
+  <div class="about-cards">
+
+    <!-- Vision -->
+    <div class="about-card">
+      <h3>Vision 🌱</h3>
+      <p>Revolutionize global agri-trade with transparency, tech, and trust—delivering quality from Indian farms to the world.</p>
+    </div>
+
+    <!-- Mission -->
+    <div class="about-card">
+      <h3>Mission 🚀</h3>
+      <p>Digitally optimize agri-supply chains, connect farmers to global buyers, and ensure traceable, high-quality exports.</p>
+    </div>
+
+    <!-- Values -->
+    <div class="about-card">
+      <h3>Values 💡</h3>
+      <p>Integrity, Innovation, Farmer-first, Sustainability, and Global Quality—building trust at every stage.</p>
+    </div>
+
+    <!-- Goals -->
+    <div class="about-card">
+      <h3>Goal 🎯</h3>
+      <p>Connect Indian farms to the world through trust, technology, and trade.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="bg-light py-5 mt-5">
+    <div class="container text-center">
+      <h3 class="mb-4" data-aos="fade-up">Our Core Values</h3>
+      <div class="row">
+        <div class="col-md-4" data-aos="zoom-in">
+          <h5>🌿 Sustainability</h5>
+          <p>Commitment to eco-friendly farming and reduced wastage across our operations.</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <h5>📦 Quality Assurance</h5>
+          <p>End-to-end checks, certifications, and farm-level monitoring ensure consistency and trust.</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <h5>🌍 Global Outlook</h5>
+          <p>Worldwide distribution enabled with deep tech integration and documentation automation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center text-white" style="background-color: #052c1a">
+    <p>&copy; 2025 Agroxphere. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init(); </script>
+</body>
+</html>
